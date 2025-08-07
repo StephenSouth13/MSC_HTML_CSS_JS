@@ -151,33 +151,35 @@ document.addEventListener('DOMContentLoaded', () => {
   }
   // Nếu cần dùng moveSlide ở HTML, hãy gán window.moveSlide = moveSlide;
   window.moveSlide = moveSlide;
-});
 
-// Chỉnh thay đổi tab ở Mentor
-const tabBoxes = document.querySelectorAll('.tab-box');
-  const tabPanels = document.querySelectorAll('.tab-panel');
-  const tabDescription = document.getElementById('tab-description');
+  // ===== TAB MENTOR (CHỈNH THAY ĐỔI TAB) =====
+  const mentorTabBoxes = document.querySelectorAll('.tab-box');
+  const mentorTabPanels = document.querySelectorAll('.tab-panel');
+  const mentorTabDescription = document.getElementById('tab-description');
 
-  const descriptions = {
+  const mentorDescriptions = {
     "phuong-phap": "Phương pháp giảng huấn kết hợp Mentoring và Coaching giúp cho người học và các dự án giải quyết trực tiếp vấn đề vướng phải...",
     "giang-huan": "Đội ngũ trực tiếp tư vấn, thiết kế và huấn luyện cho các chương trình đào tạo và dự án tại MSC",
     "ke-thua": "Phương pháp giảng huấn kết hợp Mentoring và Coaching giúp cho các dự án, gia tộc, doanh nghiệp có được đội ngũ nhân sự kế thừa liên tục và phát triển bền vững..."
   };
 
-  tabBoxes.forEach(box => {
-    box.addEventListener('click', () => {
-      // Active tab
-      tabBoxes.forEach(b => b.classList.remove('active'));
-      box.classList.add('active');
+  if (mentorTabBoxes.length && mentorTabPanels.length && mentorTabDescription) {
+    mentorTabBoxes.forEach(box => {
+      box.addEventListener('click', () => {
+        // Active tab
+        mentorTabBoxes.forEach(b => b.classList.remove('active'));
+        box.classList.add('active');
 
-      const target = box.getAttribute('data-tab');
+        const target = box.getAttribute('data-tab');
 
-      // Toggle tab panels
-      tabPanels.forEach(panel => {
-        panel.style.display = panel.id === target ? 'block' : 'none';
+        // Toggle tab panels
+        mentorTabPanels.forEach(panel => {
+          panel.style.display = panel.id === target ? 'block' : 'none';
+        });
+
+        // Update description
+        mentorTabDescription.textContent = mentorDescriptions[target];
       });
-
-      // Update description
-      tabDescription.textContent = descriptions[target];
     });
-  });
+  }
+});
