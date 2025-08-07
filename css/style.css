@@ -272,6 +272,435 @@
   }
 }
 
+/* =========================
+   ENHANCED RESPONSIVE IMPROVEMENTS
+   MSC Center Enhanced Design
+ ========================= */
+
+/* CSS Variables for consistency */
+:root {
+  --primary-blue: #003B5C;
+  --accent-blue: #0091D0;
+  --light-blue: #E8F4F8;
+  --gold: #D4AF37;
+  --dark-gold: #B8941F;
+  --shadow-light: 0 2px 15px rgba(0, 59, 92, 0.08);
+  --shadow-medium: 0 4px 25px rgba(0, 59, 92, 0.15);
+  --shadow-heavy: 0 8px 35px rgba(0, 59, 92, 0.25);
+  --gradient-primary: linear-gradient(135deg, var(--primary-blue) 0%, var(--accent-blue) 100%);
+  --gradient-gold: linear-gradient(135deg, var(--gold) 0%, var(--dark-gold) 100%);
+  --transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-slow: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+/* Enhanced smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Enhanced body styles */
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Enhanced Topbar */
+.topbar {
+  background: linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(248,249,250,0.95) 100%);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(0, 59, 92, 0.05);
+  position: relative;
+}
+
+.topbar::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gradient-gold);
+}
+
+/* Enhanced Header */
+header {
+  box-shadow: var(--shadow-medium);
+  backdrop-filter: blur(15px);
+  transition: var(--transition);
+}
+
+header::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: var(--gradient-gold);
+  opacity: 0;
+  transition: var(--transition);
+}
+
+header.scrolled::before {
+  opacity: 1;
+}
+
+/* Enhanced Logo */
+.logo img {
+  filter: drop-shadow(0 4px 8px rgba(0, 59, 92, 0.1));
+  transition: var(--transition-slow);
+}
+
+.logo:hover img {
+  transform: scale(1.05);
+  filter: drop-shadow(0 6px 12px rgba(0, 59, 92, 0.2));
+}
+
+/* Enhanced Navigation */
+.nav-menu li a {
+  padding: 12px 20px;
+  border-radius: 12px;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.nav-menu li a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.nav-menu li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: var(--gold);
+  transition: var(--transition);
+  transform: translateX(-50%);
+}
+
+.nav-menu li a:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.nav-menu li a:hover::before {
+  left: 0;
+}
+
+.nav-menu li a:hover::after {
+  width: 80%;
+}
+
+/* Enhanced Profile Buttons */
+.profile-btn {
+  border-radius: 25px;
+  box-shadow: var(--shadow-light);
+  position: relative;
+  overflow: hidden;
+  transition: var(--transition);
+}
+
+.profile-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: var(--gradient-primary);
+  transition: var(--transition);
+  z-index: -1;
+}
+
+.profile-btn:hover {
+  color: white;
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-medium);
+}
+
+.profile-btn:hover::before {
+  left: 0;
+}
+
+/* Enhanced Mobile Navigation */
+.mobile-nav-toggle {
+  padding: 8px;
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+.mobile-nav-toggle:hover {
+  background: var(--light-blue);
+  transform: scale(1.1);
+}
+
+.nav-mobile-menu {
+  background: var(--gradient-primary);
+  backdrop-filter: blur(20px);
+  box-shadow: var(--shadow-heavy);
+  transition: var(--transition-slow);
+}
+
+.mobile-header {
+  margin-bottom: 40px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.mobile-header span {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--gold);
+}
+
+#mobile-close {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 8px;
+  border-radius: 12px;
+  transition: var(--transition);
+}
+
+#mobile-close:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: rotate(90deg);
+}
+
+.nav-mobile a {
+  padding: 15px 20px;
+  border-radius: 12px;
+  transition: var(--transition);
+  border-left: 4px solid transparent;
+}
+
+.nav-mobile a:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-left-color: var(--gold);
+  transform: translateX(10px);
+}
+
+/* Enhanced Overlay */
+.mobile-overlay {
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(5px);
+  transition: var(--transition);
+}
+
+/* Scroll Animations */
+.fade-in {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: var(--transition-slow);
+}
+
+.fade-in.visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.slide-in-left {
+  opacity: 0;
+  transform: translateX(-50px);
+  transition: var(--transition-slow);
+}
+
+.slide-in-left.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.slide-in-right {
+  opacity: 0;
+  transform: translateX(50px);
+  transition: var(--transition-slow);
+}
+
+.slide-in-right.visible {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.scale-in {
+  opacity: 0;
+  transform: scale(0.8);
+  transition: var(--transition-slow);
+}
+
+.scale-in.visible {
+  opacity: 1;
+  transform: scale(1);
+}
+
+/* Enhanced Floating Contact */
+.floating-contact {
+  position: fixed;
+  bottom: 25px;
+  right: 25px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  z-index: 999;
+}
+
+.contact-btn {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  box-shadow: var(--shadow-medium);
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+.contact-btn::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: var(--gradient-primary);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.contact-btn:hover {
+  transform: translateY(-5px) scale(1.1);
+  box-shadow: var(--shadow-heavy);
+}
+
+.back-to-top {
+  background: var(--gradient-gold) !important;
+  opacity: 0;
+  visibility: hidden;
+  transition: var(--transition);
+}
+
+.back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Enhanced Cards */
+.du-an-card, .mentor-card, .chu-nhiem-item, .news-item {
+  transition: var(--transition);
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: var(--shadow-light);
+}
+
+.du-an-card:hover, .mentor-card:hover, .chu-nhiem-item:hover, .news-item:hover {
+  transform: translateY(-10px) scale(1.02);
+  box-shadow: var(--shadow-heavy);
+}
+
+/* Ripple Effect */
+.ripple {
+  position: absolute;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.6);
+  transform: scale(0);
+  animation: ripple-animation 0.6s linear;
+  pointer-events: none;
+}
+
+@keyframes ripple-animation {
+  to {
+    transform: scale(4);
+    opacity: 0;
+  }
+}
+
+/* Loading Animation */
+.fade-in-up {
+  animation: fadeInUp 0.6s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Ultra responsive improvements */
+@media (max-width: 360px) {
+  .floating-contact {
+    bottom: 15px;
+    right: 15px;
+    gap: 10px;
+  }
+
+  .contact-btn {
+    width: 45px;
+    height: 45px;
+  }
+
+  .nav-mobile-menu {
+    width: 95%;
+    padding: 20px;
+  }
+}
+
+@media (min-width: 1600px) {
+  header {
+    padding: 20px 50px;
+  }
+
+  .nav-menu {
+    gap: 40px;
+  }
+
+  .logo img {
+    height: 95px;
+  }
+}
+
+/* Accessibility improvements */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* Print styles */
+@media print {
+  .topbar,
+  .floating-contact,
+  .mobile-nav-toggle,
+  .nav-mobile-menu {
+    display: none !important;
+  }
+
+  header {
+    position: static;
+    box-shadow: none;
+  }
+}
+
 
   /* =========================
     LƯU Ý QUAN TRỌNG
@@ -1266,4 +1695,3 @@
   }
 
   /* XÓA HOẶC COMMENT tất cả các đoạn .carousel-section và .section-title khác trong file để tránh bị ghi đè! */
-
