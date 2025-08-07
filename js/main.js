@@ -182,4 +182,145 @@ document.addEventListener('DOMContentLoaded', () => {
       });
     });
   }
+
+  // ===== ENHANCED SCROLL ANIMATIONS =====
+  const setupScrollAnimations = () => {
+    const options = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, options);
+
+    // Add animation classes to elements
+    document.querySelectorAll('.du-an-card, .mentor-card, .chu-nhiem-item, .msc-item, .news-item').forEach((el, index) => {
+      if (index % 2 === 0) {
+        el.classList.add('slide-in-left');
+      } else {
+        el.classList.add('slide-in-right');
+      }
+      observer.observe(el);
+    });
+
+    document.querySelectorAll('h1, h2, h3, .du-an-title, .mentor-title, .news-title-center').forEach(el => {
+      el.classList.add('fade-in');
+      observer.observe(el);
+    });
+
+    document.querySelectorAll('img, video, .hero-video').forEach(el => {
+      el.classList.add('scale-in');
+      observer.observe(el);
+    });
+  };
+
+  // ===== ENHANCED HEADER EFFECTS =====
+  const setupHeaderEffects = () => {
+    const header = document.querySelector('header');
+    const logoImg = document.querySelector('.logo img');
+
+    window.addEventListener('scroll', () => {
+      const scrolled = window.pageYOffset;
+
+      if (scrolled > 100) {
+        header.classList.add('scrolled');
+        if (logoImg) {
+          logoImg.style.height = '60px';
+        }
+      } else {
+        header.classList.remove('scrolled');
+        if (logoImg) {
+          logoImg.style.height = '85px';
+        }
+      }
+    });
+  };
+
+  // ===== ENHANCED CARD HOVER EFFECTS =====
+  const setupCardEffects = () => {
+    const cards = document.querySelectorAll('.du-an-card, .mentor-card, .chu-nhiem-item, .news-item');
+
+    cards.forEach(card => {
+      card.addEventListener('mouseenter', (e) => {
+        e.target.style.transform = 'translateY(-10px) scale(1.02)';
+        e.target.style.boxShadow = '0 15px 40px rgba(0, 59, 92, 0.2)';
+      });
+
+      card.addEventListener('mouseleave', (e) => {
+        e.target.style.transform = 'translateY(0) scale(1)';
+        e.target.style.boxShadow = '0 4px 15px rgba(0, 59, 92, 0.1)';
+      });
+    });
+  };
+
+  // ===== RIPPLE EFFECT FOR BUTTONS =====
+  const setupRippleEffect = () => {
+    const buttons = document.querySelectorAll('.btn, .profile-btn, button');
+
+    buttons.forEach(button => {
+      button.addEventListener('click', (e) => {
+        const ripple = document.createElement('span');
+        const rect = button.getBoundingClientRect();
+        const size = Math.max(rect.width, rect.height);
+        const x = e.clientX - rect.left - size / 2;
+        const y = e.clientY - rect.top - size / 2;
+
+        ripple.style.width = ripple.style.height = size + 'px';
+        ripple.style.left = x + 'px';
+        ripple.style.top = y + 'px';
+        ripple.classList.add('ripple');
+
+        button.appendChild(ripple);
+
+        setTimeout(() => {
+          ripple.remove();
+        }, 600);
+      });
+    });
+  };
+
+  // ===== TYPING EFFECT =====
+  const setupTypingEffect = () => {
+    const typewriterElements = document.querySelectorAll('.typewriter-text');
+
+    typewriterElements.forEach(element => {
+      const text = element.textContent;
+      element.textContent = '';
+      element.style.borderRight = '2px solid #0091D0';
+
+      let i = 0;
+      const typing = () => {
+        if (i < text.length) {
+          element.textContent += text.charAt(i);
+          i++;
+          setTimeout(typing, 50);
+        } else {
+          element.style.borderRight = 'none';
+        }
+      };
+
+      const observer = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            setTimeout(typing, 500);
+            observer.unobserve(entry.target);
+          }
+        });
+      });
+
+      observer.observe(element);
+    });
+  };
+
+  // Initialize all enhanced features
+  setupScrollAnimations();
+  setupHeaderEffects();
+  setupCardEffects();
+  setupRippleEffect();
+  setupTypingEffect();
 });
