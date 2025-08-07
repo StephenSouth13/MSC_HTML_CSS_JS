@@ -1,0 +1,15 @@
+{
+  "rewrites": [
+    { "source": "/index", "destination": "/index.html" },
+    { "source": "/login", "destination": "/login.html" },
+    { "source": "/about", "destination": "/about.html" },
+    { "source": "/cv/pha", "destination": "/cv/pha/pha.html" }
+  ],
+  "redirects": [
+    {
+      "source": "https://www.msc.edu.vn/:path*",
+      "destination": "https://msc.edu.vn/:path*",
+      "permanent": true
+    }
+  ]
+}
