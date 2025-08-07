@@ -1,0 +1,72 @@
+# ----------------------------------------
+# Kích hoạt Rewrite Engine
+RewriteEngine On
+
+# ========================================
+# 1. Ép HTTPS (chuyển http -> https)
+RewriteCond %{HTTPS} off
+RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+# ========================================
+# 2. Redirect www -> non-www (SEO chuẩn hóa)
+RewriteCond %{HTTP_HOST} ^www\.msc\.edu\.vn$ [NC]
+RewriteRule ^(.*)$ https://msc.edu.vn/$1 [L,R=301]
+
+# ========================================
+# 3. Redirect index.html → /
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ / [R=301,L]
+
+# ========================================
+# 4. Bỏ đuôi .html khỏi URL (clean URLs)
+RewriteCond %{THE_REQUEST} \s([^\s]+)\.html [NC]
+RewriteRule ^ %1 [R=301,L]
+
+# ========================================
+# 5. Tự động tìm file .html nếu URL không có đuôi
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.*)$ $1.html [L]
+
+# ========================================
+# 6. Trang mặc định
+DirectoryIndex index.html
+
+# ========================================
+# 7. Tối ưu cache (giữ lại nhưng có thời hạn hợp lý)
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/html "access plus 0 seconds"
+  ExpiresByType text/css "access plus 1 week"
+  ExpiresByType application/javascript "access plus 1 week"
+  ExpiresByType image/webp "access plus 1 month"
+  ExpiresByType image/jpeg "access plus 1 month"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType video/mp4 "access plus 1 month"
+  ExpiresByType video/webm "access plus 1 month"
+</IfModule>
+
+# ========================================
+# 8. Bảo vệ các file hệ thống
+<FilesMatch "(\.htaccess|\.env|\.git|\.DS_Store|composer\.lock|package-lock\.json)">
+  Order allow,deny
+  Deny from all
+</FilesMatch>
+
+# ========================================
+# 9. Chống liệt kê thư mục nếu thiếu index.html
+Options -Indexes
+
+# ========================================
+# 10. Tăng cường bảo mật HTTP Headers
+<IfModule mod_headers.c>
+  Header always set X-Frame-Options "SAMEORIGIN"
+  Header set X-XSS-Protection "1; mode=block"
+  Header set X-Content-Type-Options "nosniff"
+  Header set X-Download-Options "noopen"
+  Header set X-Permitted-Cross-Domain-Policies "none"
+  Header set Referrer-Policy "strict-origin-when-cross-origin"
+  Header always set Strict-Transport-Security "max-age=63072000; includeSubDomains; preload"
+</IfModule>

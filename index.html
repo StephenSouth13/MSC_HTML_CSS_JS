@@ -1,0 +1,778 @@
+<head>
+  <!-- Thiết lập bảng mã ký tự để hiển thị tiếng Việt chính xác -->
+  <meta charset="UTF-8" />
+
+  <!-- Tối ưu hiển thị trên thiết bị di động, đảm bảo giao diện responsive -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Mô tả nội dung trang web, giúp cải thiện thứ hạng SEO -->
+  <meta name="description"
+    content="MSC - Trung tâm Mentoring kết hợp Coaching đầu tiên ở Việt Nam.Giúp cho học viên và dự án phát triển bền vững.">
+  <meta name="description"
+    content="MSC có đội ngũ trực tiếp tư vấn,thiết kế và huấn luyện các chương trình đào tạo tại MSC.">
+  <meta name="description" content="MSCer Members - Những học viên xuất sắc và trưởng thành từ MSC.">
+  <meta name="keywords" content="MSC - Trung tâm đào tạo kỹ năng ">
+  <meta name="keywords" content="MSC - Trung tâm mentoring và coaching">
+  <meta name="keywords" content="MSC - Trung tâm đào tạo kỹ năng dành cho người đi làm">
+  <meta name="keywords" content="MSC - Trung tâm nghiên cứu và phát triển dự án">
+  <meta name="keywords" content="MSC - Trung tâm đào tạo nhân sự kế thừa">
+
+
+  <!-- Thông tin về tác giả trang web -->
+  <meta name="author" content="MSC Team">
+
+  <!-- Cho phép công cụ tìm kiếm index và theo dõi liên kết -->
+  <meta name="robots" content="index, follow">
+
+  <!-- Icon hiển thị trên tab trình duyệt (favicon) -->
+  <link rel="icon" href="/msc/assets/logo/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="/msc/assets/logo/favicon-16x16.png">
+  <link rel="icon" sizes="32x32" href="/msc/assets/logo/favicon-32x32.png">
+
+  <!-- Icon dành cho thiết bị Android & Progressive Web App -->
+  <link rel="icon" sizes="192x192" href="/msc/assets/logo/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="/msc/assets/logo/android-chrome-512x512.png">
+
+  <!-- Icon dành cho iOS -->
+  <link rel="apple-touch-icon" href="/msc/assets/logo/apple-touch-icon.png">
+
+  <!-- Khai báo file manifest để hỗ trợ Progressive Web App -->
+  <link rel="manifest" href="/msc/assets/logo/site.webmanifest">
+
+  <!-- Khai báo URL chính thức của trang để tránh lỗi trùng lặp nội dung SEO -->
+  <link rel="canonical" href="https://msc.edu.vn/">
+
+  <!-- Open Graph: hiển thị đẹp khi chia sẻ trên Facebook, Zalo, LinkedIn -->
+  <meta property="og:title" content="MSC - Đào tạo Kỹ năng cho Sinh viên và Người đi làm">
+  <meta property="og:description"
+    content="Khám phá các khóa học kỹ năng mềm tại MSC, nơi đào tạo chuyên nghiệp cho sinh viên và người đi làm.">
+  <meta property="og:image" content="https://msc.edu.vn/msc/assets/logo/logo.png">
+  <meta property="og:url" content="https://msc.edu.vn/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card: hiển thị đẹp khi chia sẻ trên Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MSC - Đào tạo Kỹ năng cho Sinh viên và Người đi làm">
+  <meta name="twitter:description"
+    content="Khám phá các khóa học kỹ năng mềm tại MSC, nơi đào tạo chuyên nghiệp cho sinh viên và người đi làm.">
+  <meta name="twitter:image" content="https://msc.edu.vn/msc/assets/logo/logo.png">
+
+  <!-- Tiêu đề trang, hiển thị ở tab trình duyệt và trên Google -->
+  <title>MSC - Viện Đào tạo Kỹ năng cho Sinh viên & Người đi làm</title>
+
+  <!-- Import CSS giao diện chính -->
+  <link rel="stylesheet" href="css/style.css" />
+
+  <!-- Import icon Bootstrap để sử dụng các biểu tượng (bi-house, bi-phone,...) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+
+  <!-- Tối ưu font Google bằng preconnect để tải nhanh hơn -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Import font chữ Roboto Slab (cho tiêu đề) -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+  <!-- Import font chữ Open Sans (cho nội dung, dễ đọc) -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+
+    <div class="topbar-right">
+      <div class="topbar-left">
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197473.png" alt="vi"> </a>
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="en"> </a>
+      </div>
+
+      <div class="d-flex">
+        <a href="login.html" target="_blank">
+          <button class="profile-btn">Đăng Nhập</button>
+        </a>
+
+        <a class="d-done" href="register.html" target="_blank">
+          <button class="profile-btn">Đăng Ký</button>
+        </a>
+
+        <a class="d-done" href="profile.html" target="_blank">
+          <button class="profile-btn">Hồ sơ năng lực</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Header + Navbar -->
+  <header id="header">
+    <div class="logo">
+      <a href="../index.html"><img src="../msc/assets/logo/LogoMSC.webp" alt="MSC Logo" /></a>
+    </div>
+    <nav class="navbar">
+      <!-- Nút mở menu (hamburger icon) -->
+      <div class="mobile-nav-toggle" id="mobile-toggle">
+        <i class="bi bi-list"></i>
+      </div>
+      <!-- Menu dành cho PC -->
+      <ul class="nav-menu">
+        <li><a href="trang-con/gioi-thieu.html">GIỚI THIỆU</a></li>
+        <li><a href="trang-con/dao-tao.html">ĐÀO TẠO</a></li>
+        <li><a href="trang-con/du-an.html">DỰ ÁN</a></li>
+        <li><a href="trang-con/mentor.html">MENTORS</a></li>
+        <li><a href="trang-con/mscer.html">MSCer</a></li>
+        <li><a href="trang-con/dong-hanh.html">ĐỒNG HÀNH</a></li>
+        <li><a href="trang-con/chia-se.html">CHIA SẺ</a></li>
+        <li><a href="trang-con/lien-he.html">LIÊN HỆ</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <div class="mobile-header">
+      <span>MENU</span>
+      <button id="mobile-close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="nav-mobile">
+      <li><a href="trang-con/gioi-thieu.html">GIỚI THIỆU</a></li>
+      <li><a href="trang-con/dao-tao.html">ĐÀO TẠO</a></li>
+      <li><a href="trang-con/du-an.html">DỰ ÁN</a></li>
+      <li><a href="trang-con/mentor.html">MENTORS</a></li>
+      <li><a href="trang-con/mscer.html">MSCer</a></li>
+      <li><a href="trang-con/dong-hanh.html">ĐỒNG HÀNH</a></li>
+      <li><a href="trang-con/chia-se.html">CHIA SẺ</a></li>
+      <li><a href="trang-con/lien-he.html">LIÊN HỆ</a></li>
+    </ul>
+  </div>
+
+  <!-- icon-->
+  <div class="floating-contact">
+    <a href="https://www.facebook.com/msc.edu.vn" class="contact-btn fb-btn" target="_blank">
+      <img src="msc/assets/logo/fb.png" alt="Facebook">
+    </a>
+    <!--  <a href="#" class="contact-btn call-btn">
+      <img src="msc/assets/logo/ytb copy.png" alt=" Youtube">
+    </a>-->
+    <!--  <a href="#" class="contact-btn zalo-btn" target="_blank">
+      <img src="msc/assets/logo/tiktok.png" alt="TikTok">
+    </a>-->
+    <a href="https://zalo.me/g/acumou501" class="contact-btn fb-btn" target="_blank">
+      <img src="msc/assets/logo/zalo.webp" alt="Zalo">
+    </a>
+    <a href="" id="back-to-top" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- Hero Carousel -->
+  <section class="hero-video">
+    <div class="video-container">
+      <div class="video-slide">
+        <video src="msc/assets/video/Intro.mp4" autoplay muted loop playsinline preload="auto"></video>
+      </div>
+    </div>
+  </section>
+
+
+  <body>
+
+    <!--Các dự án-->
+    <section id="du-an">
+      <div class="du-an-container">
+        <h2 class="du-an-title">DỰ ÁN ĐÃ TRIỂN KHAI CỦA MSC</h2>
+        <h2 class="typewriter-text" style="text-align: center;font-size: 16px;
+    color: #555;
+    margin-bottom: 40px;
+    line-height: 1.6;">MSC là trung tâm Mentoring kết hợp Coaching đầu tiên ở Việt Nam.
+          <br>Giúp cho học viên và các dự án phát triển chuyên nghiệp và bền vững
+        </h2>
+        <div class="du-an-grid">
+
+          <!-- Card 1 -->
+          <div class="du-an-card">
+            <img src="../msc/assets/project/FDeli.webp" alt="Nông Trại Hải Vân">
+            <h3>Dự án: Công ty TNHH F Deli </h3>
+            <p><strong>👉Mentoring & Coaching:</strong> Chuẩn hoá quy trình làm việc </p>
+            <p><strong>👉Ban Giảng Huấn:</strong> Phan Huỳnh Anh <br>& MSC Teams</p>
+            <a href="#" class="btn">Chi tiết >></a>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="du-an-card">
+            <img src="../msc/assets/project/HL.webp" alt="Happy Land">
+            <h3>Dự án: Khu du lịch Happy Land</h3>
+            <p><strong>👉Mentoring & Coaching:</strong> Đào tạo đội ngũ Sales & Marketing</p>
+            <p><strong>👉Ban Giảng Huấn:</strong> Phan Huỳnh Anh <br>& MSCer Team</p>
+            <a href="#" class="btn">Chi tiết >></a>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="du-an-card">
+            <img src="../msc/assets/project/ES.webp" alt="Einstein School HCM">
+            <h3>Dự án: Einstein School HCM - ESH</h3>
+            <p><strong>👉Mentoring & Coaching:</strong> Đào tạo đội ngũ Sales & Marketing, Tư vấn tuyển sinh</p>
+            <p><strong>👉Ban Giảng Huấn:</strong> Phan Huỳnh Anh <br>& Đoàn Đức Minh</p>
+            <a href="#" class="btn">Chi tiết >></a>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="du-an-card">
+
+            <img src="../msc/assets/project/TC.webp" alt="Tâm Châu">
+            <h3>Dự án: Tâm Châu</h3>
+            <p><strong>👉Mentoring & Coaching:</strong> Đội ngũ Quản lý dự án</p>
+            <p><strong>👉Ban Giảng Huấn:</strong> Phan Huỳnh Anh <br>& MSCer Team</p>
+            <a href="#" class="btn">Chi tiết >></a>
+          </div>
+
+          <!-- Card 5 -->
+          <div class="du-an-card">
+            <img src="../msc/assets/project/DD.webp" alt="Tâm Châu">
+            <h3>Dự án: Đôi Dép - Không thể thiếu nhau</h3>
+            <p><strong>👉Mentoring & Coaching:</strong> Đội ngũ Quản lý dự án</p>
+            <p><strong>👉Ban Giảng Huấn:</strong> Phan Huỳnh Anh <br>& Trần Lê Bảo Châu</p>
+            <a href="#" class="btn">Chi tiết >></a>
+          </div>
+          <!-- Card 6 -->
+          <div class="du-an-card">
+            <img src="../msc/assets/project/VNPT.webp" alt="Java Backend">
+            <h3>Dự án: VNPT</h3>
+            <p><b>👉Mentoring & Coaching:</b> Văn hoá doanh nghiệp
+            <p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh <br>& Nguyễn Chí Thành</p>
+            <a href="#" class="btn">Chi tiết >></a>
+          </div>
+
+        </div>
+
+        <div class="du-an-button">
+          <a href="../trang-con/du-an.html" class="btn btn-outline">Các dự án khác</a>
+        </div>
+      </div>
+    </section>
+
+    <!--Members-->
+    <!--Ban giảng huấn-->
+    <!-- Ban giảng huấn -->
+    <section class="mentor-section">
+      <style>
+        .mentor-title {
+          text-align: center;
+          font-size: 2rem;
+          margin-bottom: 20px;
+          color: #333;
+          font-weight: 600;
+        }
+      </style>
+
+      <h2 class="mentor-title">BAN GIẢNG HUẤN</h2>
+      <!-- Tab Header
+  <div class="tab-header">
+    <div class="tab-box" data-tab="phuong-phap">PHƯƠNG PHÁP GIẢNG HUẤN</div>
+    <div class="tab-box active" data-tab="giang-huan">BAN GIẢNG HUẤN</div>
+    <div class="tab-box" data-tab="ke-thua">NHÂN SỰ KẾ THỪA</div>
+  </div>
+ -->
+      <!-- Mô tả động -->
+      <div id="tab-description" class="subtext">
+        Đội ngũ trực tiếp tư vấn, thiết kế và huấn luyện cho các chương trình đào tạo và dự án tại MSC
+      </div>
+
+      <!-- Tab Content -->
+      <div class="tab-content">
+
+        <!-- PHƯƠNG PHÁP GIẢNG HUẤN -->
+        <div class="tab-panel" id="phuong-phap" style="display: none;">
+        </div>
+
+        <!-- BAN GIẢNG HUẤN -->
+        <div class="tab-panel" id="giang-huan" style="display: block;">
+          <div class="mentor-grid">
+
+            <!-- Mentor Cards -->
+            <div class="mentor-card">
+              <a href="../cv/pha/pha.html" title="Profile">
+                <div class="mentor-image">
+                  <img src="../msc/assets/members/PHAvuong.jpg" alt="Phan Huỳnh Anh">
+                </div>
+              </a>
+              <div class="mentor-info">
+                <h3>Phan Huỳnh Anh</h3>
+                <p class="position highlight">Tiến Sĩ Kinh tế</p>
+                <div class="contact-info">
+                  <p>Chủ tịch HĐQT Công ty Smentor</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mentor-card">
+              <a href="../cv/hcl/hcl.html" title="Profile">
+                <div class="mentor-image">
+                  <img src="../msc/assets/mentors/HCL.webp" alt="Hoàng Cửu Long">
+                </div>
+              </a>
+              <div class="mentor-info">
+                <h3>Hoàng Cửu Long</h3>
+                <p class="position highlight">Phó Giáo Sư - Tiến Sĩ</p>
+                <div class="contact-info">
+                  <p>Giảng viên Đại học Kinh tế TP. Hồ Chí Minh</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mentor-card">
+              <a href="../cv/ddm/ddm.html" title="Profile">
+                <div class="mentor-image">
+                  <img src="../msc/assets/mentors/DDM.webp" alt="Đoàn Đức Minh">
+                </div>
+              </a>
+              <div class="mentor-info">
+                <h3>Đoàn Đức Minh</h3>
+                <p class="position highlight">Thạc Sĩ - Nghiên cứu sinh</p>
+                <div class="contact-info">
+                  <p>Giảng viên Đại học Western Sydney</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mentor-card">
+              <a href="https://vabix.vn/" title="Profile" target="_blank">
+                <div class="mentor-image">
+                  <img src="../msc/assets/mentors/NCT.webp" alt="Nguyễn Chí Thành">
+                </div>
+              </a>
+              <div class="mentor-info">
+                <h3>Nguyễn Chí Thành</h3>
+                <p class="position highlight">CEO</p>
+                <div class="contact-info">
+                  <p>Làng Kết nối Kinh doanh VABIX</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mentor-card">
+              <a href="https://successpartner.vn/" title="Profile" target="_blank">
+                <div class="mentor-image">
+                  <img src="../msc/assets/mentors/LNTC.webp" alt="Lê Nhật Trường Chinh">
+                </div>
+              </a>
+              <div class="mentor-info">
+                <h3>Lê Nhật Trường Chinh</h3>
+                <p class="position highlight">CEO & Founder</p>
+                <div class="contact-info">
+                  <p>SUCCESS Partner Co.Ltd</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="mentor-card">
+              <a href="https://ipcs.mpi.gov.vn/" title="Profile" target="_blank">
+                <div class="mentor-image">
+                  <img src="../msc/assets/mentors/PPH.webp" alt="Phan Phát Huy">
+                </div>
+              </a>
+              <div class="mentor-info">
+                <h3>Phan Phát Huy</h3>
+                <p class="position highlight">CEO & Founder</p>
+                <div class="contact-info">
+                  <p>HILTOW LANDMARK</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+        <!-- NHÂN SỰ KẾ THỪA -->
+        <div class="tab-panel" id="ke-thua" style="display: none;">
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- Ban Chủ Nhiệm -->
+    <section class="chu-nhiem">
+      <h2>BAN CHỦ NHIỆM</h2>
+      <p class="subtext">
+        Là đội ngũ nòng cốt chịu trách nhiệm vận hành và phát triển Trung tâm MSC.<br>
+        Ban Chủ Nhiệm đóng vai trò điều phối toàn diện các dự án, kết nối<br>
+        nguồn lực và đảm bảo MSC hoạt động hiệu quả, đúng định hướng.
+      </p>
+
+      <div class="chu-nhiem-grid">
+        <div class="chu-nhiem-item">
+          <a href="../cv/dtk/dtk.html" title="Profile">
+            <img src="msc/assets/members/DTK.webp" alt="Dương Thế Khải">
+            <h4>Dương Thế Khải</h4>
+            <p>Phó Giám Đốc MSC Center</p>
+          </a>
+        </div>
+
+        <div class="chu-nhiem-item">
+          <a href="../cv/phmk/phmk.html" title="Profile">
+            <img src="msc/assets/members/PHMK.webp" alt="Phạm Hoàng Minh Khánh">
+            <h4>Phạm Hoàng Minh Khánh</h4>
+            <p>Giám Đốc MSC Center</p>
+          </a>
+        </div>
+
+        <div class="chu-nhiem-item">
+          <a href="../cv/qtl/qtl.html" title="Profile">
+            <img src="msc/assets/members/QTL.webp" alt="Quách Thành Long">
+            <h4>Quách Thành Long</h4>
+            <p>Trưởng Phòng Công nghệ thông tin</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+
+
+    <!--MSC-->
+
+    <div class="msc-container">
+      <h2>MSCers Member</h2>
+      <p class="subtext">
+        Những học viên xuất sắc và trưởng thành từ MSC </p>
+
+      <button class="msc-nav msc-prev" onclick="scrollCarousel('prev')">
+        <svg viewBox="0 0 24 24">
+          <polyline points="15 18 9 12 15 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+      <div class="msc-wrapper">
+        <div class="msc-item">
+          <div class="msc-image">
+            <img src="msc/assets/members/DTK.webp" alt="Dương Thế Khải">
+          </div>
+          <div class="msc-title">Dương Thế Khải</div>
+        </div>
+        <div class="msc-item">
+          <div class="msc-image">
+            <img src="msc/assets/members/QTL.webp" alt="Quách Thành Long">
+          </div>
+          <div class="msc-title">Quách Thành Long</div>
+        </div>
+        <div class="msc-item">
+          <div class="msc-image">
+            <img src="msc/assets/members/LPU.webp" alt="Lã Phương Uyên">
+          </div>
+          <div class="msc-title">Lã Phương Uyên</div>
+        </div>
+        <div class="msc-item">
+          <div class="msc-image">
+            <img src="msc/assets/members/NNTH.webp" alt="Nguyễn N. Thiên Hương">
+          </div>
+          <div class="msc-title">Nguyễn N. Thiên Hương</div>
+        </div>
+        <div class="msc-item">
+          <div class="msc-image">
+            <img src="msc/assets/members/PNTT.webp" alt="Phạm Ngọc Thuỳ Trang">
+          </div>
+          <div class="msc-title">Phạm Ngọc Thuỳ Trang</div>
+        </div>
+        <div class="msc-item">
+          <div class="msc-image">
+            <img src="msc/assets/members/NHMT.webp" alt="Trần Hoàng Minh Thư">
+          </div>
+          <div class="msc-title">Trần Hoàng Minh Thư</div>
+        </div>
+        <div class="msc-item">
+          <div class="msc-image">
+            <img src="msc/assets/members/HQN.webp" alt="Huỳnh Nguyên Quân">
+          </div>
+          <div class="msc-title">Huỳnh Nguyên Quân</div>
+        </div>
+      </div>
+
+      <button class="msc-nav msc-next" onclick="scrollCarousel('next')">
+        <svg viewBox="0 0 24 24">
+          <polyline points="9 18 15 12 9 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+            stroke-linejoin="round" />
+        </svg>
+      </button>
+    </div>
+    <script>
+      let autoScrollInterval;
+      const SCROLL_INTERVAL = 2000;
+      function startAutoScroll() {
+        autoScrollInterval = setInterval(() => {
+          scrollCarousel('next', true);
+        }, SCROLL_INTERVAL);
+      }
+      function stopAutoScroll() {
+        clearInterval(autoScrollInterval);
+      }
+      function scrollCarousel(direction, isAuto = false) {
+        const wrapper = document.querySelector('.msc-wrapper');
+        const itemWidth = wrapper.querySelector('.msc-item').offsetWidth;
+        const gap = parseInt(getComputedStyle(wrapper).gap) || 24;
+        const scrollAmount = itemWidth + gap;
+        if (direction === 'next') {
+          if (wrapper.scrollLeft + wrapper.clientWidth >= wrapper.scrollWidth - 2) {
+            if (isAuto) {
+              wrapper.scrollTo({ left: 0, behavior: 'smooth' });
+            }
+          } else {
+            wrapper.scrollBy({ left: scrollAmount, behavior: 'smooth' });
+          }
+        } else {
+          wrapper.scrollBy({ left: -scrollAmount, behavior: 'smooth' });
+        }
+      }
+      document.addEventListener('DOMContentLoaded', () => {
+        const wrapper = document.querySelector('.msc-wrapper');
+        const items = Array.from(wrapper.querySelectorAll('.msc-item'));
+        const gap = parseInt(getComputedStyle(wrapper).gap) || 24;
+
+        // Sao chép các mục để tạo hiệu ứng vòng lặp
+        items.forEach(item => {
+          const cloneStart = item.cloneNode(true);
+          const cloneEnd = item.cloneNode(true);
+          wrapper.appendChild(cloneEnd);
+          wrapper.insertBefore(cloneStart, items[0]);
+        });
+
+        let scrollPosition = items.length;
+        const itemWidth = items[0].offsetWidth + gap;
+        wrapper.scrollLeft = scrollPosition * itemWidth;
+
+        function scrollCarousel(direction) {
+          if (direction === 'next') {
+            scrollPosition++;
+            wrapper.scrollBy({ left: itemWidth, behavior: 'smooth' });
+            if (scrollPosition >= items.length * 2) {
+              setTimeout(() => {
+                wrapper.scrollLeft = items.length * itemWidth;
+                scrollPosition = items.length;
+              }, 500); // Delay để hoàn tất cuộn
+            }
+          } else {
+            scrollPosition--;
+            wrapper.scrollBy({ left: -itemWidth, behavior: 'smooth' });
+            if (scrollPosition <= 0) {
+              setTimeout(() => {
+                wrapper.scrollLeft = items.length * itemWidth;
+                scrollPosition = items.length;
+              }, 500); // Delay để hoàn tất cuộn
+            }
+          }
+        }
+
+        document.querySelector('.msc-prev').addEventListener('click', () => scrollCarousel('prev'));
+        document.querySelector('.msc-next').addEventListener('click', () => scrollCarousel('next'));
+
+        // Thêm chức năng vuốt trên điện thoại
+        let startX = 0;
+        let isDragging = false;
+
+        wrapper.addEventListener('touchstart', (e) => {
+          startX = e.touches[0].clientX;
+          isDragging = true;
+        });
+
+        wrapper.addEventListener('touchmove', (e) => {
+          if (!isDragging) return;
+          const deltaX = e.touches[0].clientX - startX;
+          if (deltaX > 50) {
+            scrollCarousel('prev');
+            isDragging = false;
+          } else if (deltaX < -50) {
+            scrollCarousel('next');
+            isDragging = false;
+          }
+        });
+
+        wrapper.addEventListener('touchend', () => {
+          isDragging = false;
+        });
+      });
+    </script>
+
+    <script src="js/main.js" defer></script>
+
+    <section class="news-section">
+      <div class="news-header">
+        <h2 class="news-title-center">CHIA SẺ</h2>
+        <div class="news-tabs">
+          <button class="tab active" data-tab="share">Chia sẻ</button>
+          <button class="tab" data-tab="hotnews">Tin tức nổi bật</button>
+        </div>
+      </div>
+
+      <div class="news-tabs-content">
+        <!-- Tab: CHIA SẺ -->
+        <div class="tab-pane active" data-pane="share">
+          <div class="news-list">
+            <div class="news-item">
+              <img src="msc/assets/thumbnail/kaizen.webp" alt="Kaizen">
+              <h3>Muốn phát triển liên tục - Phải có Kaizen!</h3>
+              <p>Kaizen là triết lý cải tiến liên tục, giúp doanh nghiệp luôn đổi mới và nâng cao chất lượng.</p>
+            </div>
+            <div class="news-item">
+              <img src="msc/assets/thumbnail/IKIGAI.webp" alt="Ikigai">
+              <h3>IKIGAI – Tìm ra lẽ sống của cuộc đời bạn</h3>
+              <p>Khám phá ý nghĩa cuộc sống và cách Ikigai giúp bạn đạt được sự cân bằng trong công việc và đam mê.</p>
+            </div>
+            <div class="news-item">
+              <img src="msc/assets/thumbnail/TMC.webp" alt="TMC">
+              <h3>Trainer - Coach - Mentor khác nhau như thế nào?</h3>
+              <p>Hiểu rõ vai trò và giá trị của từng hình thức hỗ trợ phát triển cá nhân và nghề nghiệp.</p>
+            </div>
+            <div class="news-item">
+              <img src="msc/assets/thumbnail/ASK.webp" alt="ASK">
+              <h3>ASK - Mô hình đánh giá năng lực chuẩn quốc tế</h3>
+              <p>Đo lường năng lực nhân sự hiệu quả với mô hình ASK: Attitude, Skills, Knowledge.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Tab: TIN TỨC NỔI BẬT -->
+        <div class="tab-pane" data-pane="hotnews">
+          <div class="news-list">
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="carousel-section">
+  <div class="container-title">
+    <div class="section-title" data-aos="fade-up">
+      <h2>ĐỐI TÁC ĐỒNG HÀNH</h2>
+    </div>
+  </div>
+
+  <div class="carousel-container">
+    <div class="carousel-track">
+      <!-- Logo list -->
+      <img src="msc/assets/carousel/ASL.webp" alt="ASL" />
+      <img src="msc/assets/carousel/Binemo.webp" alt="Binemo" />
+      <img src="msc/assets/carousel/BNI.webp" alt="BNI" />
+      <img src="msc/assets/carousel/CP.webp" alt="CP" />
+      <img src="msc/assets/carousel/CSMO.webp" alt="CSMO" />
+      <img src="msc/assets/carousel/Greenfeed.webp" alt="Greenfeed" />
+      <img src="msc/assets/carousel/Happyland.webp" alt="Happyland" />
+      <img src="msc/assets/carousel/HTOGroup.webp" alt="HTOGroup" />
+      <!-- Repeat logos for infinite effect -->
+      <img src="msc/assets/carousel/ASL.webp" alt="ASL" />
+      <img src="msc/assets/carousel/Binemo.webp" alt="Binemo" />
+      <img src="msc/assets/carousel/BNI.webp" alt="BNI" />
+      <img src="msc/assets/carousel/CP.webp" alt="CP" />
+      <img src="msc/assets/carousel/CSMO.webp" alt="CSMO" />
+    </div>
+  </div>
+</section>
+
+
+
+
+ <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <img src="../msc/assets/logo/logo.png" alt="msc Logo" class="footer-logo" />
+          <p class="footer-sub">279 Nguyễn Tri Phương, Quận 10, TP.Hồ Chí Minh</p>
+          <p class="footer-sub">Điện Thoại: (+84) 329 381 489</p>
+          <p class="footer-sub">Email: msc.edu.vn@gmail.com</p>
+          <p class="footer-sub">© 2025 MSC Center. Phát triển bởi 
+            <br> Phòng Công nghệ thông tin</p>
+      
+        </div>
+
+        <div class="footer-col">
+          <h4>Kết nối với chúng tôi</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/msc.edu.vn"><img src="../msc/assets/logo/fb.png" alt="Facebook" /></a>
+            <a href="#"><img src="../msc/assets/logo/ytb copy.png" alt="YouTube" /></a>
+            <a href="https://zalo.me/g/acumou501"><img src="../msc/assets/logo/zalo.webp" alt="Yputebe" /></a>
+          </div>
+
+          <!-- Fanpage Facebook -->
+          <div class="fb-page" data-href="https://www.facebook.com/msc.edu.vn" data-tabs="timeline" data-width="300"
+            data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/msc.edu.vn" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/msc.edu.vn">MSC Việt Nam</a>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Đăng ký nhận tin tức mới nhất từ MSC</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Email của bạn" required />
+            <button type="submit">
+              <img src="../msc/assets/send.png" alt="Gửi" />
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </footer>
+
+    <!-- SDK Facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"
+      nonce="abc123"></script>
+
+
+    <script src="../js/main.js" defer></script>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <!-- Back to Top Button -->
+    <script>
+      let currentVersion = null;
+
+      async function checkVersion() {
+        try {
+          const response = await fetch('/version.json?_=' + Date.now()); // tránh cache
+          const data = await response.json();
+
+          if (currentVersion && data.version !== currentVersion) {
+            console.log("New version detected. Reloading...");
+            location.reload(true); // reload trang
+          }
+
+          currentVersion = data.version;
+        } catch (error) {
+          console.error("Không thể kiểm tra phiên bản:", error);
+        }
+      }
+
+      // Kiểm tra mỗi 10 giây
+      setInterval(checkVersion, 10000);
+
+      // Gọi lần đầu sau khi load trang
+      checkVersion();
+    </script>
+    <script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "url": "https://msc.edu.vn",
+  "logo": "https://msc.edu.vn/msc/assets/logo/seo_v2.png",
+  "name": "Viện Kỹ năng MSC"
+}
+</script>
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXX');
+</script>
+   
+
+
+  </body>
+
+  </html>

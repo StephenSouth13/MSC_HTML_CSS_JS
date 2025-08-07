@@ -1,0 +1,135 @@
+/* Hero Section */
+.hero-section {
+      position: relative;
+      width: 100%;
+      height: 300px;
+      background-image: url('../msc/assets/bannercon.webp'); /* Đổi thành ảnh của bạn */
+      background-size: cover;
+      background-position: center;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      color: white;
+      text-align: center;
+    }
+
+    .overlay {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: hsla(198, 100%, 39%, 0.6); /* Lớp phủ đỏ mờ */
+      z-index: 1;
+    }
+
+    .hero-text {
+      position: relative;
+      z-index: 2;
+      font-size: 24px;
+      font-weight: bold;
+      padding: 20px;
+    }
+.login-container {
+  max-width: 600px;
+  margin: 0 auto; /* Sát hoàn toàn phía trên */
+  padding: 40px;
+  background-color: #f5f9fc;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.05);
+}
+
+.login-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.login-header img {
+  width: 40px;
+  margin-right: 10px;
+}
+
+.login-header h2 {
+  color: #0a4369;
+  font-size: 24px;
+  margin: 0;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.form-group {
+  display: flex;
+  align-items: center;
+}
+
+.form-group label {
+  width: 120px;
+  font-weight: bold;
+  color: #333;
+}
+
+.form-group input {
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 16px;
+}
+
+.login-button {
+  justify-content: center;
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+
+.login-button button{
+  background-color: #063b59;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  text-decoration: none;
+  cursor: pointer;
+  text-align: center;
+  display: inline-block;
+}
+
+.login-button button:hover{
+  background-color: #0a5d88;
+}
+
+.signup-button {
+  background-color: hsl(0, 86%, 46%);
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  font-size: 16px;
+  cursor: pointer;
+  text-decoration: none;
+}
+/* Ẩn menu mặc định trên mobile */
+.nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #fff;
+  position: absolute;
+  top: 60px; /* tùy theo header */
+  right: 0;
+  width: 100%;
+  z-index: 999;
+}
+
+/* Khi bật menu (thêm class active) */
+.nav-menu.active {
+  display: flex;
+}

@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quach Thanh Long</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/msc/assets/logo/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="/msc/assets/logo/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="/msc/assets/logo/favicon-32x32.png" type="image/png">
+  <link rel="icon" sizes="192x192" href="/msc/assets/logo/android-chrome-192x192.png" type="image/png">
+  <link rel="icon" sizes="512x512" href="/msc/assets/logo/android-chrome-512x512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/msc/assets/logo/apple-touch-icon.png">
+
+  <!-- Manifest cho PWA -->
+  <link rel="manifest" href="/msc/assets/logo/site.webmanifest">
+
+  <link rel="stylesheet" href="../../css/cv.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+    <div class="topbar-right">
+      <div class="topbar-left">
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="en"> </a>
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197473.png" alt="vi"> </a>
+      </div>
+      <div class="d-flex">
+        <a href="../../login.html" target="_blank">
+          <button class="profile-btn">Login</button>
+        </a>
+        <a class="d-done" href="../../register.html" target="_blank">
+          <button class="profile-btn">Register</button>
+        </a>
+        <a class="d-done" href="../../profile.html" target="_blank">
+          <button class="profile-btn">Profile</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header + Navbar -->
+  <header id="header">
+    <div class="logo">
+      <a href="../../index.html"><img src="../../msc/assets/logo/LogoMSC.webp" alt="MSC Logo" /></a>
+    </div>
+    <nav class="navbar">
+      <div class="mobile-nav-toggle" id="mobile-toggle">
+        <i class="bi bi-list"></i>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../../trang-con/gioi-thieu.html">ABOUT</a></li>
+        <li><a href="../../trang-con/dao-tao.html">TRAINING</a></li>
+        <li><a href="../../trang-con/du-an.html">PROJECTS</a></li>
+        <li><a href="../../trang-con/mentor.html">MENTORS</a></li>
+        <li><a href="../../trang-con/mscer.html">MSCer</a></li>
+        <li><a href="../../trang-con/dong-hanh.html">PARTNERS</a></li>
+        <li><a href="../../trang-con/lien-he.html">CONTACT</a></li>
+        <li><a href="../../trang-con/chia-se.html">NEWS</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <div class="mobile-header">
+      <span>MENU</span>
+      <button id="mobile-close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="nav-mobile">
+      <li><a href="../../trang-con/gioi-thieu.html">ABOUT</a></li>
+        <li><a href="../../trang-con/dao-tao.html">TRAINING</a></li>
+        <li><a href="../../trang-con/du-an.html">PROJECTS</a></li>
+        <li><a href="../../trang-con/mentor.html">MENTORS</a></li>
+        <li><a href="../../trang-con/mscer.html">MSCer</a></li>
+        <li><a href="../../trang-con/dong-hanh.html">PARTNERS</a></li>
+        <li><a href="../../trang-con/lien-he.html">CONTACT</a></li>
+        <li><a href="../../trang-con/chia-se.html">NEWS</a></li>
+    </ul>
+  </div>
+
+  <!-- Floating Contact Icons -->
+  <div class="floating-contact">
+    <a href="https://www.facebook.com/msc.edu.vn" class="contact-btn fb-btn" target="_blank">
+      <img src="../../msc/assets/logo/fb.png" alt="Facebook">
+    </a>
+    <a href="https://zalo.me/g/acumou501" class="contact-btn fb-btn" target="_blank">
+      <img src="../../msc/assets/logo/zalo.webp" alt="Zalo">
+    </a>
+    <a href="" id="back-to-top" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </div>
+  <!-- Hero Section -->
+<section class="profile-hero-full">
+  <div class="profile-hero-actions">
+    <button class="btn-nav" onclick="window.location.href='qtl.html'">VI</button>
+    <button class="btn-nav secondary" onclick="window.location.href='../../trang-con/mscer.html'">Back to MSCer</button>
+  </div>
+  <div class="profile-hero-content">
+    <img src="../../msc/assets/members/QTL.webp" alt="Quach Thanh Long" class="profile-img">
+    <h1>Quach Thanh Long</h1>
+    <p>Investor | Web/Game/App Developer | Business Analyst</p>
+       <div class="qr-box">
+      <img src="../../msc/assets/QR/qtlQR.png" alt="QR Code" class="qr-img" />
+    </div>
+  </div>
+</section>
+
+<section data-aos="fade-up">
+  <h2>Personal Information</h2>
+  <ul>
+    <li><strong>Full Name:</strong> Quach Thanh Long</li>
+    <li><strong>Location:</strong> Ho Chi Minh City, Vietnam</li>
+    <li><strong>Phone:</strong> <a href="tel:0979137018">+84 979 137 018</a></li>
+    <li><strong>Email:</strong> <a href="mailto:stephensouth1307@gmail.com">stephensouth1307@gmail.com</a></li>
+    <li><strong>Blog:</strong> <a href="https://stephensouth9.wordpress.com" target="_blank">stephensouth9.wordpress.com</a></li>
+    <li><strong>Website:</strong> <a href="https://stephensouth13.github.io/cv-qtl/" target="_blank">https://stephensouth13.github.io/cv-qtl/</a></li>    
+  </ul>
+
+  <h2>Education</h2>
+  <ul>
+    <li>2021–2024: B.A. in Human Resource Management – University of Economics Ho Chi Minh City</li>
+    <li>2024–2026: B.A. in Game Development – VTC Academy</li>
+    <li>2024–2027: B.A. in Investment Economics – University of Economics Ho Chi Minh City</li>
+  </ul>
+
+  <h2>Language Skills</h2>
+  <ul>
+    <li>English: IELTS 0.0 (2021)</li>
+    <li>Japanese: JLPT N5</li>
+    <li>German: Basic communication (A1)</li>
+  </ul>
+
+  <h2>Technical Skills</h2>
+  <ul>
+    <li><strong>Front-End:</strong> HTML, CSS, JavaScript, React, Next.js</li>
+    <li><strong>Back-End:</strong> Node.js, PHP, Python, C#, MySQL, API</li>
+    <li><strong>Version Control:</strong> Git, GitHub</li>
+    <li><strong>Tools:</strong> Figma, Draw.io, VSCode, Postman</li>
+    <li><strong>Game Development:</strong> Unity, Godot</li>
+  </ul>
+
+  <h2>Work Experience</h2>
+  <ul>
+    <li><strong>Head of IT Department</strong> – MSC Center (05/2025 – Present)</li>
+    <li><strong>Web Developer & Investment Analyst</strong> – MSC – Mekong Skill Center (10/2024 – Present)</li>
+    <li><strong>Strategic Advisor</strong> – Galaxy English Center – Dau Tieng</li>
+    <li><strong>Collaborator</strong> – District 1 Statistics Sub-Department (04/2024 – 06/2024)</li>
+    <li><strong>Collaborator</strong> – Srun (08/2023 – 12/2023)</li>
+    <li><strong>Business Analyst Intern</strong> – BAC (03/2023 – 08/2023)</li>
+    <li><strong>Accountant</strong> – Beekids English Center (08/2023 – 10/2023)</li>
+    <li><strong>Private Tutor</strong> – Math, Physics, English (09/2021 – 12/2023)</li>
+    <li><strong>Sales Collaborator</strong> – Full House Club (03/2022 – 05/2022)</li>
+  </ul>
+
+  <h2>Highlighted Projects</h2>
+  <ul>
+    <li><strong>Research Paper: Management Thinking for IT Professionals</strong> (06/2025)</li>
+    <li><strong>Labor Contract Management Software</strong> (05/2024)<br> Role: UI/UX, Flowchart, Business Analyst – 3-member team</li>
+    <li><strong>Free Basic Programming Course</strong> (05/2024)<br> Role: C#, C++ Instructor</li>
+    <li><strong>Website: msc.edu.vn</strong><br> Role: Leader - Developer</li>
+    <li><strong>Unity Game: Wolf Card</strong> (05/2025)<br> Role: Leader - Developer – 3-member team</li>
+    <li><strong>More Projects:</strong> <a href="https://stephensouth13.github.io/cv-qtl/#portfolio" target="_blank">Portfolio</a></li>
+  </ul>
+
+  <h2>Awards & Activities</h2>
+  <ul>
+    <li>🏆 1st Prize – VTC Academy Talent Scholarship – Game Development Major (2024)</li>
+    <li>🥇 Champion – VSM Marathon 2024 – 42km distance</li>
+    <li>🥉 Top 3 BA Projects – BAC 2024: Labor Contract Management Software</li>
+    <li>🎖️ Top 1 Long Distance Record – Tan Uyen – Under 2 hours (2024)</li>
+    <li>🥈 2nd Prize – Tan Uyen Athletics 2025: 800m individual & 400m relay</li>
+    <li>🏃‍♂️ Marathon Pacer:
+      <ul>
+        <li>Binh Duong Half Marathon (1h30 – 21km)</li>
+        <li>Dak Lak Marathon (4h30 – 42km)</li>
+      </ul>
+    </li>
+  </ul>
+</section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <img src="../../msc/assets/logo/logo.png" alt="msc Logo" class="footer-logo" />
+        <p class="footer-sub">279 Nguyen Tri Phuong, District 10, Ho Chi Minh City</p>
+        <p class="footer-sub">Phone: (+84) 329 381 489</p>
+        <p class="footer-sub">Email: info@msc.edu.vn</p>
+        <p class="footer-sub">© 2025 MSC Center. Developed by 
+          <br> IT Department</p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect with Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/msc.edu.vn"><img src="../../msc/assets/logo/fb.png" alt="Facebook" /></a>
+          <a href="#"><img src="../../msc/assets/logo/ytb copy.png" alt="YouTube" /></a>
+          <a href="https://zalo.me/g/acumou501"><img src="../../msc/assets/logo/zalo.webp" alt="Zalo" /></a>
+        </div>
+        <!-- Facebook Fanpage -->
+        <div class="fb-page" data-href="https://www.facebook.com/msc.edu.vn" data-tabs="timeline" data-width="300"
+          data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/msc.edu.vn" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/msc.edu.vn">MSC Vietnam</a>
+          </blockquote>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Subscribe for the Latest News from MSC</h4>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your Email" required />
+          <button type="submit">
+            <img src="../../msc/assets/send.png" alt="Send" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"
+    nonce="abc123"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../../js/nogallary.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

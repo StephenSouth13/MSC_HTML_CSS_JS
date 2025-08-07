@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hoang Cuu Long</title>
+  
+  <!-- Favicon -->
+  <link rel="icon" href="/msc/assets/logo/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="/msc/assets/logo/favicon-16x16.png" type="image/png">
+  <link rel="icon" sizes="32x32" href="/msc/assets/logo/favicon-32x32.png" type="image/png">
+  <link rel="icon" sizes="192x192" href="/msc/assets/logo/android-chrome-192x192.png" type="image/png">
+  <link rel="icon" sizes="512x512" href="/msc/assets/logo/android-chrome-512x512.png" type="image/png">
+  <link rel="apple-touch-icon" href="/msc/assets/logo/apple-touch-icon.png">
+
+  <!-- Manifest cho PWA -->
+  <link rel="manifest" href="/msc/assets/logo/site.webmanifest">
+  <link rel="stylesheet" href="../../css/cv.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+<body>
+ <!-- Topbar -->
+  <div class="topbar">
+    <div class="topbar-right">
+      <div class="topbar-left">
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="en"> </a>
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197473.png" alt="vi"> </a>
+      </div>
+      <div class="d-flex">
+        <a href="../../login.html" target="_blank">
+          <button class="profile-btn">Login</button>
+        </a>
+        <a class="d-done" href="../../register.html" target="_blank">
+          <button class="profile-btn">Register</button>
+        </a>
+        <a class="d-done" href="../../profile.html" target="_blank">
+          <button class="profile-btn">Profile</button>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header + Navbar -->
+  <header id="header">
+    <div class="logo">
+      <a href="../../index.html"><img src="../../msc/assets/logo/LogoMSC.webp" alt="MSC Logo" /></a>
+    </div>
+    <nav class="navbar">
+      <div class="mobile-nav-toggle" id="mobile-toggle">
+        <i class="bi bi-list"></i>
+      </div>
+      <ul class="nav-menu">
+        <li><a href="../../trang-con/gioi-thieu.html">ABOUT</a></li>
+        <li><a href="../../trang-con/dao-tao.html">TRAINING</a></li>
+        <li><a href="../../trang-con/du-an.html">PROJECTS</a></li>
+        <li><a href="../../trang-con/mentor.html">MENTORS</a></li>
+        <li><a href="../../trang-con/mscer.html">MSCer</a></li>
+        <li><a href="../../trang-con/dong-hanh.html">PARTNERS</a></li>
+        <li><a href="../../trang-con/chia-se.html" >NEWS</a></li>
+        <li><a href="../../trang-con/lien-he.html">CONTACT</a></li>
+
+      </ul>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+  </header>
+
+  <!-- Mobile Menu -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <div class="mobile-header">
+      <span>MENU</span>
+      <button id="mobile-close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="nav-mobile">
+      <li><a href="../../trang-con/gioi-thieu.html">ABOUT</a></li>
+        <li><a href="../../trang-con/dao-tao.html">TRAINING</a></li>
+        <li><a href="../../trang-con/du-an.html">PROJECTS</a></li>
+        <li><a href="../../trang-con/mentor.html">MENTORS</a></li>
+        <li><a href="../../trang-con/mscer.html">MSCer</a></li>
+        <li><a href="../../trang-con/dong-hanh.html">PARTNERS</a></li>
+        <li><a href="../../trang-con/chia-se.html" >NEWS</a></li>
+        <li><a href="../../trang-con/lien-he.html">CONTACT</a></li>
+
+    </ul>
+  </div>
+  <!-- Floating Contact Icons -->
+  <div class="floating-contact">
+    <a href="https://www.facebook.com/msc.edu.vn" class="contact-btn fb-btn" target="_blank">
+      <img src="../../msc/assets/logo/fb.png" alt="Facebook">
+    </a>
+    <a href="https://zalo.me/g/acumou501" class="contact-btn fb-btn" target="_blank">
+      <img src="../../msc/assets/logo/zalo.webp" alt="Zalo">
+    </a>
+    <a href="" id="back-to-top" class="back-to-top">
+      <i class="bi bi-arrow-up"></i>
+    </a>
+  </div>
+  <!-- Hero Section -->
+  <section class="profile-hero-full">
+    <div class="profile-hero-actions">
+      <button class="btn-nav" onclick="window.location.href='hcl.html'">VN</button>
+      <button class="btn-nav secondary" onclick="window.location.href='../../trang-con/mentor.html'">Back to Mentors Page</button>
+    </div>
+    <div class="profile-hero-content">
+      <img src="../../msc/assets/mentors/HCL.webp" alt="Hoang Cuu Long" class="profile-img" />
+      <h1>Hoang Cuu Long</h1>
+      <p>Associate Professor, Doctor of Business Administration</p>
+      <div class="qr-box">
+      <img src="../../msc/assets/QR/hclQR.png" alt="QR Code" class="qr-img" />
+    </div>
+    </div>
+  </section>
+
+  <section data-aos="fade-up">
+    <h2>Personal Information</h2>
+    <ul>
+      <li><strong>Name:</strong> Hoang Cuu Long</li>
+      <li><strong>Date of Birth:</strong> April 30, 1977</li>
+      <li><strong>Place of Birth:</strong> Ho Chi Minh City</li>
+      <li><strong>Hometown:</strong> Quang Nam</li>
+      <li><strong>Address:</strong> 324 Dien Bien Phu, Ward 11, District 10, Ho Chi Minh City</li>
+      <li><strong>Email:</strong> <a href="mailto:hoangcuulong@ueh.edu.vn">hoangcuulong@ueh.edu.vn</a></li>
+      <li><strong>Phone:</strong> <a href="tel:0903923590">0903923590</a></li>
+    </ul>
+
+    <h2>Work Organization</h2>
+    <ul>
+      <li>International Business - Marketing Department</li>
+      <li>Position: Deputy Head of Department</li>
+    </ul>
+
+    <h2>Education Background</h2>
+    <ul>
+      <li>2019, Doctorate, Business Administration, University of Economics Ho Chi Minh City</li>
+      <li>2006, Master's Degree, Business Administration, James Cook University</li>
+      <li>1999, Bachelor's Degree, Business Administration, University of Economics Ho Chi Minh City</li>
+    </ul>
+
+    <h2>Training and Research Fields</h2>
+    <ul>
+      <li>Master's Degree:
+        <ul>
+          <li>Master - Business and Management (834)</li>
+          <li>Master - Business Administration (8340101)</li>
+          <li>Master - Trade Business (8340121)</li>
+          <li>Master - Public Management (8340403)</li>
+          <li>Master - Human Resource Management (8340404)</li>
+        </ul>
+      </li>
+      <li>Doctorate:
+        <ul>
+          <li>Doctor - Business and Management (934)</li>
+          <li>Doctor - Business Administration (9340101)</li>
+          <li>Doctor - Trade Business (9340121)</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h2>Research Activities</h2>
+    <h3>Research Topics</h3>
+    <ul>
+      <li>2023-2024: Factors affecting customer engagement and brand loyalty in Vietnam FMCG: the moderation of artificial intelligence, School-level project</li>
+      <li>2024: Building socio-economic development strategies for Binh Minh town, Vinh Long province until 2030 with a vision to 2050, Ministry-level project</li>
+      <li>2023: Research on online entrepreneurship activities of university students in Vietnam, Ministry-level project</li>
+      <li>2023: Formation & sustainable development: Management & operation of Banh Mi Ma Hai retail chain, State-level project</li>
+      <li>2016: Research on the impact of counterfeit products on luxury fashion brands as perceived by customers in Ho Chi Minh City, School-level project</li>
+    </ul>
+
+    <h3>Published Scientific Works</h3>
+    <ul>
+      <li>2025: FACTORS AFFECTING GREEN PURCHASE BEHAVIOUR OF YOUNG PEOPLE WITH DAIRY PRODUCTS THROUGH NEW TRENDS AND PACKAGING, International Conference of Business Theories & Practices (iCOB 2024)</li>
+      <li>2025: Mindfulness Practice and Work Performance: The Mediating Role of Emotional Intelligence and Psychological Capital, Brain and Behavior</li>
+      <li>2025: Factors affecting customer engagement and brand loyalty in Vietnam FMCG: the moderation of artificial intelligence, Cogent Business & Management</li>
+      <li>2025: Factors influencing Vietnamese Gen Z’s impulsive buying behavior in the beauty and personal care field through livestream, Open Access Journal of Business and Economics</li>
+      <li>2024: Factors affecting purchase intention of green cosmetics products toward young generation in Ho Chi Minh City, International Journal of Science Academic Research</li>
+      <li>2024: Factors influencing purchase intention on e-commerce platforms in Ho Chi Minh City, Economic & Forecast Journal</li>
+      <li>2024: How playable advertisements affect Gen Z’s intention to download apps in Ho Chi Minh City, Ho Chi Minh City Open University Journal of Science - Economics and Business Administration</li>
+      <li>2024: Examining brand equity and tourists’ purchasing motivations towards the world's best rice ‘ST25’ for Vietnam's future sustainable food tourism destination, Financial - Marketing Research Journal</li>
+      <li>2024: Perceived green value, green brand innovation, and intention to use green technology vehicles, Development & Integration Journal</li>
+      <li>2024: Environmental concern, Minimalism in Collectivist culture impact on green purchase intention through the mediating role of pro-environmental behaviours, iCOB 2024</li>
+      <li>2024: Factors influencing the intention to buy environmentally friendly packaging products among young people in Ho Chi Minh City, Trade Journal</li>
+      <li>2024: [Podcast] Customer engagement, brand loyalty, and the moderation of AI experience in the FMCG sector in Vietnam</li>
+      <li>2024: Comprehensive and Progressive Agreement for Trans-Pacific Partnership (CPTPP) regarding the export of timber and wood products from Vietnam to the Japanese market, Economic & Forecast Journal</li>
+      <li>2024: The impact of virtual influencers on the purchasing intention of Gen Z customers in Ho Chi Minh City, Finance Journal</li>
+      <li>2024: Environmental, Social, and Governance practices on impulse buying tendency through young customer engagement, Development and Integration</li>
+      <li>2024: Analyzing Generation Z’s intentions to support sustainable tourism development in Nha Trang, Journal of Global Responsibility</li>
+      <li>2024: The role of digital traceability in optimizing online shopping intention through mobile applications, Finance Journal</li>
+      <li>2024: The impact of social media marketing on customer experience evaluation and brand loyalty, Journal of Finance – Marketing</li>
+      <li>2024: Essential soft skills for work and business</li>
+      <li>2024: Flow experience and impulsive buying behavior through online business, Finance Journal</li>
+      <li>2024: Influence of Virtual Social Capital on Sustainable Clothing Consumption Pattern: A Study on Young People in Ho Chi Minh City, International Journal of Electronic Commerce Studies</li>
+      <li>2024: The impact of price and service quality on B2B customer satisfaction in the food industry, Finance Journal</li>
+      <li>2024: Impacts of extended reality (XR) on virtual try-on techniques and intention to use fashion products: moderation of technology anxiety, ICYREB 2024</li>
+      <li>2024: How social media marketing impacts the apartment purchase intention of Generation Z in Ho Chi Minh City, Journal of Finance – Marketing</li>
+      <li>2024: Success factors of telemedicine startups in Vietnam: the roadmap to transform healthcare customer behavior, Asia Pacific Journal of Health Management</li>
+      <li>2024: Online marketing solutions for compliance services for foreigners (Expats) in Vietnam, Trade Journal</li>
+      <li>2024: Perceived humanization and social presence on user reviews: a case study of virtual influencers, Development & Integration</li>
+      <li>2024: The impact of customer service quality in the real estate sector in Ho Chi Minh City, Trade Journal</li>
+      <li>2023: The impact of emotional competence and service recovery activities on customer loyalty in online shopping in Ho Chi Minh City, Financial - Marketing Research Journal</li>
+      <li>2023: The relationship between Social Customer Engagement and Brand loyalty of the Vietnamese young generation: moderation of Artificial Intelligence</li>
+      <li>2023: Online entrepreneurship of university students in Vietnam: Theory and practice</li>
+      <li>2023: From local luxury brands to exclusive souvenirs for upscale tourism in Vietnam: A case study of régions eau de parfum (edp)</li>
+      <li>2023: Influence of virtual social capital on sustainable clothing consumption pattern: a study on young people in Ho Chi Minh City, International Conference on Science, Education, and Viable Engineering (ICSEVEN)</li>
+      <li>2023: The impact of Artificial Intelligence Chatbot GPT on learning satisfaction: a study about students in Ho Chi Minh City</li>
+      <li>2023: Blockchain technology applications in retail branding: Insights from retailers in the developing world, Thunderbird International Business Review</li>
+      <li>2023: The economic impacts of the UK-Vietnam Free Trade Agreement (UKVFTA) on Vietnam’s electronics industry, Journal of Finance – Marketing</li>
+      <li>2023: Governance and Monetary Policy Impacts on Public Acceptance of CBDC Adoption, Research in International Business and Finance</li>
+      <li>2023: Technology for sustainable development of street food retail systems: the case of Banh Mi Ma Hai</li>
+      <li>2023: The impact of business simulation games on Vietnamese students’ entrepreneurial intention, VNUHCM Journal of Economics, Business and Law</li>
+      <li>2023: The impact of packaging color on the impulsive buying behavior of customers at convenience stores in Ho Chi Minh City, Economics and Business Management</li>
+      <li>2022: The impact of Corporate Social Responsibility implementation on brand preference in the beverage industry among young Vietnamese consumers</li>
+      <li>2022: The impact of business simulation games on Vietnamese students’ entrepreneurial intention, Journal of Science and Technology Development</li>
+      <li>2022: The influence of online celebrity branding on customer engagement motivation: Virtual interaction behavior and purchase intention</li>
+      <li>2022: Personalized advertising: The impact of privacy concerns</li>
+      <li>2022: “Make-in-Vietnam” Cartoons: A Hidden Kingdom, The Brawijaya International Conference on Economics, Business and Finance 2021 (BICEBF 2021)</li>
+      <li>2022: The Impact of TikTok Advertising on Young People's Online Shopping Behavior during the Covid-19 Pandemic, International Journal of Smart Business and Technology</li>
+      <li>2021: DIGITAL APPLICATION IN VIETNAM HERITAGE TOURISM DURING COVID-19: CURRENT SITUATION AND TRENDS</li>
+      <li>2021: Examining Brand Equity And Tourists’ Purchasing Motivations Towards The World Best Rice ‘ST25’ as Vietnamese Food Souvenir for Future Sustainable Food Tourism Destination in Vietnam, International Conference on Business and Finance 2021</li>
+      <li>2021: Market orientation, corporate social responsibility, and firm performance: The moderating role of relationship marketing orientation, Journal: Cogent Business & Management</li>
+      <li>2021: The Controlling Effects of Cultural Dimensions on Job Burnout of Vietnamese Employees by Sexual Harassment in Workplaces, Hunan Daxue Xuebao/Journal of Hunan University Natural Sciences</li>
+      <li>2021: Elements influence how young people interpret an advertising message, Indian Journal of Economics & Business</li>
+      <li>2020: Strategic Groups Assessment: The Case of Vietnam Beer Market, International Conference on Business and Finance 2020</li>
+      <li>2020: The Integrations with Augmented Reality Advertisements from the Perspectives of Vietnamese Consumers, Journal of Hunan University Natural Sciences</li>
+      <li>2020: Training essential soft skills in the learning citizen model at the University of Economics Ho Chi Minh City</li>
+      <li>2019: Corporate Social Responsibility and Firm performance: the moderation mechanism of Relationship Marketing Orientation, Central Asian Review of Economics and Policy</li>
+      <li>2017: Factors Influencing Consumers’ Attitudes Towards Counterfeit Luxury Fashion Brands: Evidence From Vietnam, Global Journal of Management and Marketing 2017</li>
+      <li>2016: Research on the factors affecting counterfeit products on luxury fashion brands as perceived by customers in Ho Chi Minh City, Economic - Technical Journal, No. 14, June 2016</li>
+    </ul>
+  </section>
+
+  <div style="text-align:center; margin-bottom: 3rem;">
+    <a href="../../index.html" class="btn">Back to Home</a>
+  </div>
+<!-- THƯ VIỆN ẢNH -->
+<section id="gallery" class="gallery section">
+  <div class="gallery-header">
+  <h2>THƯ VIỆN ẢNH DỰ ÁN</h2>
+</div>
+
+
+  <div class="gallery-container">
+    <div class="gallery-grid">
+      <div class="gallery-item"><img src="../../msc/assets/photos/1.webp" alt="Event 1"></div>
+      <div class="gallery-item"><img src="../../msc/assets/photos/2.webp" alt="Event 2"></div>
+      <div class="gallery-item"><img src="../../msc/assets/photos/3.webp" alt="Event 3"></div>
+      <div class="gallery-item"><img src="../../msc/assets/photos/4.webp" alt="Event 4"></div>
+      <div class="gallery-item"><img src="../../msc/assets/photos/5.webp" alt="Event 5"></div>
+    </div>
+  </div>
+</section>
+<!-- Lightbox chỉ 1 lần duy nhất -->
+<div class="lightbox" id="lightbox">
+  <span class="close-btn" id="closeLightbox">&times;</span>
+  <span class="nav-btn prev" id="prevBtn">&#10094;</span>
+  <img src="" alt="Lightbox Image" id="lightboxImg" />
+  <span class="nav-btn next" id="nextBtn">&#10095;</span>
+</div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-col">
+        <img src="../../msc/assets/logo/logo.png" alt="msc Logo" class="footer-logo" />
+        <p class="footer-sub">279 Nguyen Tri Phuong, District 10, Ho Chi Minh City</p>
+        <p class="footer-sub">Phone: (+84) 329 381 489</p>
+        <p class="footer-sub">Email: info@msc.edu.vn</p>
+        <p class="footer-sub">© 2025 MSC Center. Developed by 
+          <br> IT Department</p>
+      </div>
+      <div class="footer-col">
+        <h4>Connect with Us</h4>
+        <div class="social-icons">
+          <a href="https://www.facebook.com/msc.edu.vn"><img src="../../msc/assets/logo/fb.png" alt="Facebook" /></a>
+          <a href="#"><img src="../../msc/assets/logo/ytb copy.png" alt="YouTube" /></a>
+          <a href="https://zalo.me/g/acumou501"><img src="../../msc/assets/logo/zalo.webp" alt="Zalo" /></a>
+        </div>
+        <!-- Facebook Fanpage -->
+        <div class="fb-page" data-href="https://www.facebook.com/msc.edu.vn" data-tabs="timeline" data-width="300"
+          data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+          data-show-facepile="true">
+          <blockquote cite="https://www.facebook.com/msc.edu.vn" class="fb-xfbml-parse-ignore">
+            <a href="https://www.facebook.com/msc.edu.vn">MSC Vietnam</a>
+          </blockquote>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Subscribe for the Latest News from MSC</h4>
+        <form class="subscribe-form">
+          <input type="email" placeholder="Your Email" required />
+          <button type="submit">
+            <img src="../../msc/assets/send.png" alt="Send" />
+          </button>
+        </form>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Facebook SDK -->
+  <div id="fb-root"></div>
+  <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v22.0"
+    nonce="abc123"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="../../js/cv.js"></script>
+  <script>
+    AOS.init();
+  </script>
+</body>
+</html>

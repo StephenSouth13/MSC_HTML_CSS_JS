@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="vi">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="MSC là viện kỹ năng mềm... dành cho sinh viên,người đi làm. Truy cập msc.edu.vn để khám phá khám phá thông tin chi tiết.">
+<!-- Icon hiển thị trên tab trình duyệt (favicon) -->
+  <link rel="icon" href="/msc/assets/logo/favicon.ico" type="image/x-icon">
+  <link rel="icon" sizes="16x16" href="/msc/assets/logo/favicon-16x16.png">
+  <link rel="icon" sizes="32x32" href="/msc/assets/logo/favicon-32x32.png">
+  
+  <!-- Icon dành cho thiết bị Android & Progressive Web App -->
+  <link rel="icon" sizes="192x192" href="/msc/assets/logo/android-chrome-192x192.png">
+  <link rel="icon" sizes="512x512" href="/msc/assets/logo/android-chrome-512x512.png">
+  
+  <!-- Icon dành cho iOS -->
+  <link rel="apple-touch-icon" href="/msc/assets/logo/apple-touch-icon.png">
+
+  <!-- Khai báo file manifest để hỗ trợ Progressive Web App -->
+  <link rel="manifest" href="/msc/assets/logo/site.webmanifest">
+
+  <!-- Khai báo URL chính thức của trang để tránh lỗi trùng lặp nội dung SEO -->
+  <link rel="canonical" href="https://msc.edu.vn/">
+
+  <!-- Open Graph: hiển thị đẹp khi chia sẻ trên Facebook, Zalo, LinkedIn -->
+  <meta property="og:title" content="MSC - Đào tạo Kỹ năng cho Sinh viên và Người đi làm">
+  <meta property="og:description" content="Khám phá các khóa học kỹ năng mềm tại MSC, nơi đào tạo chuyên nghiệp cho sinh viên và người đi làm.">
+  <meta property="og:image" content="https://msc.edu.vn/msc/assets/logo/logo.png">
+  <meta property="og:url" content="https://msc.edu.vn/">
+  <meta property="og:type" content="website">
+
+  <!-- Twitter Card: hiển thị đẹp khi chia sẻ trên Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MSC - Đào tạo Kỹ năng cho Sinh viên và Người đi làm">
+  <meta name="twitter:description" content="Khám phá các khóa học kỹ năng mềm tại MSC, nơi đào tạo chuyên nghiệp cho sinh viên và người đi làm.">
+  <meta name="twitter:image" content="https://msc.edu.vn/msc/assets/logo/logo.png">
+  <title>DỰ ÁN</title>
+  <link rel="stylesheet" href="../css/du-an.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+    rel="stylesheet">
+</head>
+
+<body>
+  <!-- Topbar -->
+  <div class="topbar">
+
+    <div class="topbar-right">
+      <div class="topbar-left">
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197473.png" alt="vi"> </a>
+        <a class="lang-btn"><img src="https://cdn-icons-png.flaticon.com/512/197/197374.png" alt="en"> </a>
+      </div>
+
+      <div class="d-flex">
+        <a href="../login.html" target="_blank">
+          <button class="profile-btn">Đăng Nhập</button>
+        </a>
+
+        <a class="d-done" href="../register.html" target="_blank">
+          <button class="profile-btn">Đăng Ký</button>
+        </a>
+
+        <a class="d-done" href="../profile.html" target="_blank">
+          <button class="profile-btn">Hồ sơ năng lực</button>
+        </a>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Header + Navbar -->
+  <header id="header">
+    <div class="logo">
+      <a href="../index.html"><img src="../msc/assets/logo/LogoMSC.webp" alt="MSC Logo" /></a>
+    </div>
+    <nav class="navbar">
+      <!-- Nút mở menu (hamburger icon) -->
+      <div class="mobile-nav-toggle" id="mobile-toggle">
+        <i class="bi bi-list"></i>
+      </div>
+
+      <!-- Menu dành cho PC -->
+      <ul class="nav-menu">
+       <li><a href="gioi-thieu.html" >GIỚI THIỆU</a></li>
+        <li><a href="dao-tao.html" >ĐÀO TẠO</a></li>
+        <li><a href="du-an.html" class="active">DỰ ÁN</a></li>
+        <li><a href="mentor.html">MENTORS</a></li>
+        <li><a href="mscer.html">MSCer</a></li>
+        <li><a href="dong-hanh.html">ĐỒNG HÀNH</a></li>
+        <li><a href="chia-se.html">CHIA SẺ</a></li>
+        <li><a href="lien-he.html">LIÊN HỆ</a></li>
+      </ul>
+    </nav>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+
+  </header>
+
+  <!-- Menu Mobile -->
+  <div class="nav-mobile-menu" id="nav-mobile-menu">
+    <div class="mobile-header">
+      <span>MENU</span>
+      <button id="mobile-close"><i class="bi bi-x-lg"></i></button>
+    </div>
+    <ul class="nav-mobile">
+      <li><a href="gioi-thieu.html">GIỚI THIỆU</a></li>
+        <li><a href="dao-tao.html" >ĐÀO TẠO</a></li>
+        <li><a href="du-an.html" class="active">DỰ ÁN</a></li>
+        <li><a href="mentor.html">MENTORS</a></li>
+        <li><a href="mscer.html">MSCer</a></li>
+        <li><a href="dong-hanh.html">ĐỒNG HÀNH</a></li>
+        <li><a href="chia-se.html">CHIA SẺ</a></li>
+        <li><a href="lien-he.html">LIÊN HỆ</a></li>
+    </ul>
+  </div>
+
+  <!-- icon-->
+  <div class="floating-contact">
+    <a href="https://www.facebook.com/msc.edu.vn" class="contact-btn fb-btn" target="_blank">
+      <img src="../msc/assets/logo/fb.png" alt="Facebook">
+    </a>
+  <!--  <a href="#" class="contact-btn call-btn">
+      <img src="msc/assets/logo/ytb copy.png" alt=" Youtube">
+    </a>-->
+  <!--  <a href="#" class="contact-btn zalo-btn" target="_blank">
+      <img src="msc/assets/logo/tiktok.png" alt="TikTok">
+    </a>-->
+    <a href="https://zalo.me/g/acumou501" class="contact-btn fb-btn" target="_blank">
+      <img src="../msc/assets/logo/zalo.webp" alt="Zalo">
+    </a>
+    <a herf="" id="back-to-top" class="back-to-top">
+  <i class="bi bi-arrow-up"></i>
+    </a>
+  </div>
+
+  <!-- Nội dung -->
+  <section class="hero-carousel">
+    <div class="hero-section">
+    <div class="overlay"></div>
+    <div class="hero-text">
+     DỰ ÁN ĐÃ TRIỂN KHAI CỦA MSC
+    </div>
+  </div>
+ </section>
+
+
+<section class="course">
+ <div class="course-container">
+	  <div class="course-card">
+     <img src="../msc/assets/project/FDeli.webp" alt="Java Backend">
+  <h3>
+  Dự án:  Công ty TNHH F Deli<br>
+  <span style="display: block; margin-left: 40px;"></span>
+</h3>
+    <p><b>👉Mentoring & Coaching:</b> Chuẩn hoá quy trình làm việc 
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh & MSC Team</p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+	 
+  <div class="course-card">
+    <img src="../msc/assets/project/HL.webp" alt="Java Backend">
+    <h3>Dự án: Khu du lịch Happy Land</h3>
+     <p><b>👉Mentoring & Coaching:</b> Đào tạo đội ngũ Sales & Marketing
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh</p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+
+  <div class="course-card">
+      <img src="../msc/assets/project/ES.webp" alt="Java Backend">
+    <h3>Dự án: Einstein School HCM - ESH</h3>
+     <p><b>👉Mentoring & Coaching:</b> Đào tạo đội ngũ Sales & Marketing Tư vấn tuyển sinh
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh & Đoàn Đức Minh</p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+
+  <div class="course-card">
+    <img src="../msc/assets/project/TC.webp" alt="Java Backend">
+    <h3>Dự án: Tâm Châu</h3>
+    <p><b>👉Mentoring & Coaching:</b> Đội ngũ Quản lý dự án
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh</p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+	 
+	 <div class="course-card">
+    <img src="../msc/assets/project/DD.webp" alt="Java Backend">
+    <h3>Dự án: Đôi Dép - Không thể thiếu nhau</h3>
+     <p><b>👉Mentoring & Coaching:</b> Đội ngũ Quản lý dự án
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh & Trần Lê Bảo Châu</p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+	 
+	 <div class="course-card">
+    <img src="../msc/assets/project/VNPT.webp" alt="Java Backend">
+    <h3>Dự án: VNPT</h3>
+     <p><b>👉Mentoring & Coaching:</b> Văn hoá doanh nghiệp
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh & Nguyễn Chí Thành</p>
+    <a href="#" class="btn">Chi tiết >></a>
+    </div>
+	 
+	 <div class="course-card">
+    <img src="../msc/assets/project/VK.webp" alt="Java Backend">
+    <h3>Dự án: Hội ngộ Kỷ lục lần thứ 38</h3>
+       <p><b>👉Mentoring & Coaching:</b> Đội ngũ Quản lý dự án
+	<p><b>👉Đội ngũ thực hiện:</b>  Phan Huỳnh Anh & MSC Team </p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+	 
+	 <div class="course-card">
+    <img src="../msc/assets/project/Richs.webp" alt="Java Backend">
+    <h3>Dự án: Viện Bách Niên Trường Thọ - Richs Vietnam</h3>
+       <p><b>👉Mentoring & Coaching:</b> Đội ngũ Quản lý dự án
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh & MSC Team</p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+	 
+	 <div class="course-card">
+    <img src="../msc/assets/project/binemo.webp" alt="Java Backend">
+    <h3>Dự án: Binemo</h3>
+       <p><b>👉Mentoring & Coaching:</b> Sales & Marketing
+	<p><b>👉Ban Giảng Huấn:</b> Phan Huỳnh Anh & MSC Team </p>
+    <a href="#" class="btn">Chi tiết >></a>
+  </div>
+	 </section>	 
+
+  <!--Footer-->
+    <footer class="footer">
+      <div class="footer-container">
+        <div class="footer-col">
+          <img src="../msc/assets/logo/logo.png" alt="msc Logo" class="footer-logo" />
+          <p class="footer-sub">279 Nguyễn Tri Phương, Quận 10, TP.Hồ Chí Minh</p>
+          <p class="footer-sub">Điện Thoại: (+84) 329 381 489</p>
+          <p class="footer-sub">Email: msc.edu.vn@gmail.com</p>
+          <p class="footer-sub">© 2025 MSC Center. Phát triển bởi 
+            <br> Phòng Công nghệ thông tin</p>
+      
+        </div>
+
+        <div class="footer-col">
+          <h4>Kết nối với chúng tôi</h4>
+          <div class="social-icons">
+            <a href="https://www.facebook.com/msc.edu.vn"><img src="../msc/assets/logo/fb.png" alt="Facebook" /></a>
+            <a href="#"><img src="../msc/assets/logo/ytb copy.png" alt="YouTube" /></a>
+            <a href="https://zalo.me/g/acumou501"><img src="../msc/assets/logo/zalo.webp" alt="Yputebe" /></a>
+          </div>
+
+          <!-- Fanpage Facebook -->
+          <div class="fb-page" data-href="https://www.facebook.com/msc.edu.vn" data-tabs="timeline" data-width="300"
+            data-height="130" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false"
+            data-show-facepile="true">
+            <blockquote cite="https://www.facebook.com/msc.edu.vn" class="fb-xfbml-parse-ignore">
+              <a href="https://www.facebook.com/msc.edu.vn">MSC Việt Nam</a>
+            </blockquote>
+          </div>
+        </div>
+
+        <div class="footer-col">
+          <h4>Đăng ký nhận tin tức mới nhất từ MSC</h4>
+          <form class="subscribe-form">
+            <input type="email" placeholder="Email của bạn" required />
+            <button type="submit">
+              <img src="../msc/assets/send.png" alt="Gửi" />
+            </button>
+          </form>
+        </div>
+        
+      </div>
+    </footer>
+
+    <!-- SDK Facebook -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/vi_VN/sdk.js#xfbml=1&version=v22.0"
+      nonce="abc123"></script>
+
+
+    <script src="../js/main.js" defer></script>
+    <div class="mobile-overlay" id="mobile-overlay"></div>
+    <!-- Back to Top Button -->
+<script src="../js/script.js"></script>
+  </body>
+
+</html>
