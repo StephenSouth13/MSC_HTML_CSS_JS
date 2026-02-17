@@ -1,0 +1,718 @@
+/* =========================
+   COMPREHENSIVE MOBILE RESPONSIVE DESIGN
+   MSC Center - Ultra Beautiful & Responsive
+ ========================= */
+
+/* Base responsive improvements */
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container and layout improvements */
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Enhanced responsive images */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive video */
+video {
+  max-width: 100%;
+  height: auto;
+}
+
+/* =========================
+   RESPONSIVE BREAKPOINTS
+ ========================= */
+
+/* Extra Large Screens (1600px+) */
+@media (min-width: 1600px) {
+  html {
+    font-size: 18px;
+  }
+  
+  .container {
+    padding: 0 60px;
+  }
+  
+  header {
+    padding: 25px 60px;
+  }
+  
+  .nav-menu {
+    gap: 45px;
+    font-size: 18px;
+  }
+  
+  .logo img {
+    height: 100px;
+  }
+  
+  .topbar {
+    padding: 12px 60px;
+  }
+}
+
+/* Large Desktop (1200px - 1599px) */
+@media (min-width: 1200px) and (max-width: 1599px) {
+  html {
+    font-size: 17px;
+  }
+  
+  .container {
+    padding: 0 40px;
+  }
+  
+  header {
+    padding: 20px 40px;
+  }
+  
+  .nav-menu {
+    gap: 35px;
+    font-size: 16px;
+  }
+  
+  .logo img {
+    height: 85px;
+  }
+  
+  .topbar {
+    padding: 10px 40px;
+  }
+}
+
+/* Medium Desktop (992px - 1199px) */
+@media (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 16px;
+  }
+  
+  .container {
+    padding: 0 30px;
+  }
+  
+  header {
+    padding: 18px 30px;
+  }
+  
+  .nav-menu {
+    gap: 25px;
+    font-size: 15px;
+  }
+  
+  .nav-menu li a {
+    padding: 10px 15px;
+  }
+  
+  .logo img {
+    height: 75px;
+  }
+  
+  .topbar {
+    padding: 8px 30px;
+  }
+  
+  .profile-btn {
+    font-size: 13px;
+    padding: 6px 12px;
+  }
+}
+
+/* Tablet Landscape (768px - 991px) */
+@media (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 15px;
+  }
+  
+  .container {
+    padding: 0 25px;
+  }
+  
+  header {
+    padding: 15px 25px;
+  }
+  
+  .nav-menu {
+    gap: 20px;
+    font-size: 14px;
+  }
+  
+  .nav-menu li a {
+    padding: 8px 12px;
+    font-size: 13px;
+  }
+  
+  .logo img {
+    height: 65px;
+  }
+  
+  .topbar {
+    padding: 6px 25px;
+  }
+  
+  .profile-btn {
+    font-size: 12px;
+    padding: 5px 10px;
+  }
+  
+  /* Grid adjustments for tablets */
+  .du-an-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .mentor-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .chu-nhiem-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+}
+
+/* Tablet Portrait & Mobile Landscape (576px - 767px) */
+@media (min-width: 576px) and (max-width: 767px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 20px;
+  }
+  
+  header {
+    padding: 12px 20px;
+  }
+  
+  .nav-menu {
+    display: none;
+  }
+  
+  .mobile-nav-toggle {
+    display: block;
+    font-size: 28px;
+  }
+  
+  .logo img {
+    height: 55px;
+  }
+  
+  .topbar {
+    padding: 5px 20px;
+  }
+  
+  .profile-btn {
+    font-size: 11px;
+    padding: 4px 8px;
+  }
+  
+  /* Single column layouts */
+  .du-an-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .mentor-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  .chu-nhiem-grid {
+    grid-template-columns: 1fr;
+    gap: 25px;
+  }
+  
+  /* Typography adjustments */
+  h1 {
+    font-size: 1.8rem;
+  }
+  
+  h2 {
+    font-size: 1.5rem;
+  }
+  
+  h3 {
+    font-size: 1.2rem;
+  }
+  
+  /* Card spacing */
+  .du-an-card,
+  .mentor-card,
+  .news-item {
+    margin-bottom: 20px;
+  }
+}
+
+/* Mobile Portrait (375px - 575px) */
+@media (min-width: 375px) and (max-width: 575px) {
+  html {
+    font-size: 14px;
+  }
+  
+  .container {
+    padding: 0 15px;
+  }
+  
+  header {
+    padding: 10px 15px;
+  }
+  
+  .logo img {
+    height: 48px;
+  }
+  
+  .mobile-nav-toggle {
+    font-size: 26px;
+  }
+  
+  .topbar {
+    padding: 4px 15px;
+  }
+  
+  .topbar-right {
+    gap: 0.5rem;
+  }
+  
+  .profile-btn {
+    font-size: 10px;
+    padding: 3px 6px;
+  }
+  
+  .d-done {
+    display: none;
+  }
+  
+  /* Typography for mobile */
+  h1 {
+    font-size: 1.6rem;
+    line-height: 1.3;
+  }
+  
+  h2 {
+    font-size: 1.3rem;
+    line-height: 1.3;
+  }
+  
+  h3 {
+    font-size: 1.1rem;
+    line-height: 1.3;
+  }
+  
+  p {
+    font-size: 0.9rem;
+    line-height: 1.5;
+  }
+  
+  /* Button sizing */
+  .btn {
+    font-size: 0.9rem;
+    padding: 8px 15px;
+  }
+  
+  /* Floating contact adjustments */
+  .floating-contact {
+    bottom: 20px;
+    right: 15px;
+    gap: 12px;
+  }
+  
+  .contact-btn {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .contact-btn img {
+    width: 28px;
+    height: 28px;
+  }
+  
+  /* Mobile navigation improvements */
+  .nav-mobile-menu {
+    width: 90%;
+    padding: 20px;
+  }
+  
+  .nav-mobile a {
+    font-size: 16px;
+    padding: 12px 15px;
+  }
+}
+
+/* Small Mobile (320px - 374px) */
+@media (max-width: 374px) {
+  html {
+    font-size: 13px;
+  }
+  
+  .container {
+    padding: 0 12px;
+  }
+  
+  header {
+    padding: 8px 12px;
+  }
+  
+  .logo img {
+    height: 42px;
+  }
+  
+  .mobile-nav-toggle {
+    font-size: 24px;
+  }
+  
+  .topbar {
+    padding: 3px 12px;
+  }
+  
+  .topbar .lang-btn img {
+    width: 22px;
+    height: 22px;
+    margin-right: 5px;
+  }
+  
+  .profile-btn {
+    font-size: 9px;
+    padding: 2px 5px;
+  }
+  
+  /* Ultra compact typography */
+  h1 {
+    font-size: 1.4rem;
+    line-height: 1.2;
+  }
+  
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+  }
+  
+  h3 {
+    font-size: 1rem;
+    line-height: 1.2;
+  }
+  
+  p {
+    font-size: 0.85rem;
+    line-height: 1.4;
+  }
+  
+  /* Compact buttons */
+  .btn {
+    font-size: 0.8rem;
+    padding: 6px 12px;
+  }
+  
+  /* Compact floating contact */
+  .floating-contact {
+    bottom: 15px;
+    right: 12px;
+    gap: 8px;
+  }
+  
+  .contact-btn {
+    width: 42px;
+    height: 42px;
+  }
+  
+  .contact-btn img {
+    width: 24px;
+    height: 24px;
+  }
+  
+  /* Ultra compact mobile navigation */
+  .nav-mobile-menu {
+    width: 95%;
+    padding: 15px;
+  }
+  
+  .nav-mobile a {
+    font-size: 14px;
+    padding: 10px 12px;
+  }
+  
+  .mobile-header span {
+    font-size: 18px;
+  }
+}
+
+/* =========================
+   CONTENT SPECIFIC RESPONSIVE
+ ========================= */
+
+/* Hero Section Responsive */
+.hero-video {
+  height: 60vh;
+}
+
+@media (max-width: 768px) {
+  .hero-video {
+    height: 40vh;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-video {
+    height: 30vh;
+  }
+}
+
+/* Cards Grid Responsive */
+.du-an-grid,
+.mentor-grid,
+.chu-nhiem-grid {
+  display: grid;
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.du-an-grid {
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+}
+
+.mentor-grid {
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+
+.chu-nhiem-grid {
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+}
+
+@media (max-width: 768px) {
+  .du-an-grid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .mentor-grid {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+  
+  .chu-nhiem-grid {
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .du-an-grid,
+  .mentor-grid,
+  .chu-nhiem-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* News Section Responsive */
+.news-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 25px;
+}
+
+@media (max-width: 768px) {
+  .news-list {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .news-list {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
+
+/* Carousel Responsive */
+.carousel-section {
+  padding: 40px 0;
+}
+
+@media (max-width: 768px) {
+  .carousel-section {
+    padding: 30px 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-section {
+    padding: 20px 0;
+  }
+}
+
+/* Footer Responsive */
+.footer {
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+}
+
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 0;
+  }
+  
+  .footer-container {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    text-align: center;
+  }
+}
+
+/* =========================
+   ACCESSIBILITY & PERFORMANCE
+ ========================= */
+
+/* Focus states for accessibility */
+button:focus,
+a:focus {
+  outline: 2px solid #0091D0;
+  outline-offset: 2px;
+}
+
+/* Reduced motion for accessibility */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+/* High contrast mode support */
+@media (prefers-contrast: high) {
+  .nav-menu li a {
+    border: 2px solid;
+  }
+  
+  .btn {
+    border: 2px solid;
+  }
+}
+
+/* Print styles */
+@media print {
+  .topbar,
+  .floating-contact,
+  .mobile-nav-toggle,
+  .nav-mobile-menu,
+  .mobile-overlay {
+    display: none !important;
+  }
+  
+  header {
+    position: static;
+    box-shadow: none;
+    border-bottom: 1px solid #000;
+  }
+  
+  .hero-video {
+    display: none;
+  }
+  
+  body {
+    font-size: 12pt;
+    line-height: 1.4;
+    color: #000;
+    background: #fff;
+  }
+  
+  h1, h2, h3 {
+    page-break-after: avoid;
+  }
+  
+  .du-an-card,
+  .mentor-card,
+  .news-item {
+    page-break-inside: avoid;
+    border: 1px solid #000;
+    margin-bottom: 15px;
+  }
+}
+
+/* =========================
+   TOUCH AND MOBILE INTERACTIONS
+ ========================= */
+
+/* Touch-friendly buttons */
+@media (hover: none) and (pointer: coarse) {
+  .btn,
+  .profile-btn,
+  .contact-btn,
+  .nav-menu li a {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  .mobile-nav-toggle {
+    min-height: 48px;
+    min-width: 48px;
+  }
+}
+
+/* Hover effects only for devices that support hover */
+@media (hover: hover) and (pointer: fine) {
+  .du-an-card:hover,
+  .mentor-card:hover,
+  .news-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  }
+  
+  .nav-menu li a:hover {
+    color: #0091D0;
+  }
+  
+  .profile-btn:hover {
+    background: #003B5C;
+    color: white;
+  }
+}
+
+/* Safe area insets for devices with notches */
+@supports (padding: max(0px)) {
+  .topbar {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+  
+  header {
+    padding-left: max(20px, env(safe-area-inset-left));
+    padding-right: max(20px, env(safe-area-inset-right));
+  }
+  
+  .floating-contact {
+    bottom: max(25px, env(safe-area-inset-bottom));
+    right: max(25px, env(safe-area-inset-right));
+  }
+}
